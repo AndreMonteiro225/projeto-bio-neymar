@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ysabeau Infant', sans-serif;
+  }
+
+/* banner */
+
+.secao-banner {
+    max-width: 1024px;
+}
+
+.secao-banner video{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    text-align: center;
+}
+
+.container-foto-banner {
+    width: 200px;
+    height: 200px;
+    background-image: url("assets/neymar.jpg");
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin: 0 auto;
+}
+
+/* borda da foto */
+.container-foto-banner::before {
+    content: "";
+    width: 215px;
+    height: 215px;
+    position: absolute;
+    background: linear-gradient(90deg, #ffdf00, #009c3b);
+    border-radius:100%;
+    z-index: -1;
+}
+
+section {
+    padding-top: 150px;
+    text-align: center;
+}
+
+
+
+section h1 {
+    color: white;
+    font-size: 40px;
+    text-shadow: 3px 6px black ;
+}
+
+/* tarja titulo */
+section h1::before{
+    content: "";
+    background: linear-gradient(90deg, #ffdf00, #009c3b);
+    width: 70px;
+    height: 5px;
+    position: absolute;
+    margin-top:45px;
+    z-index: -1;
+}
+
+/* img verificado titulo */
+section h1::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    position: absolute;
+    background-image: url("assets/verificado.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 24px 0 0 7px;
+}
+
+.links-banner {
+    padding-bottom: 23vh;
+}
+
+.links-banner a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 25px;
+    background-color: #250D0D;
+    padding: 15px 200px 15px 200px;
+    width: 55vw;
+    height: 5vh;
+    border-radius: 20px;
+    position: relative;
+}
+
+
+.link-card {
+    margin: 15px auto 15px auto;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 80%;
+}
+
+.link-card img {
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 4px;
+    opacity: none;
+}
+
+.link-card a:hover {
+    background-color: white;
+    color:black;
+}
+
+.subtitulo h2{
+    font-size: 80px;
+    text-shadow: 3px 6px black;
+}
+
+.secao-estatisticas {
+    background-image: url("assets/imagem-de-fundo.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 1024px;
+    width: 100%;
+    color: white;
+    padding-top: 10vh;
+}
+
+.secao-estatisticas table{
+    margin: 10vh auto;
+    font-size: 35px;
+    opacity: 85%;
+}
+
+.secao-estatisticas th {
+    background-color: black;
+    color: white;
+    padding: 30px;
+}
+
+.secao-estatisticas tr:nth-child(even) {
+    background-color: black;
+    padding: 20px;
+
+}
+
+.secao-estatisticas tr:nth-child(odd) {
+    background-color: white;
+    color: black;
+    padding: 20px;
+}
+
+.time {
+    position: relative;
+    padding: 15px 30px ;
+    display: flex;
+    left: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cbf::before {
+    content:"";
+    background-image: url("assets/cbf.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -15px;
+    width: 45px;
+    height: 45px;
+}
+
+.santos::before {
+    content:"";
+    background-image: url("assets/santos.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -15px;
+    width: 45px;
+    height: 45px;
+}
+
+.barcelona::before {
+    content:"";
+    background-image: url("assets/barcelona.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -15px;
+    width: 45px;
+    height: 45px;
+}
+
+.psg::before {
+    content:"";
+    background-image: url("assets/psg.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -15px;
+    width: 45px;
+    height: 45px;
+}
+
+.alhial::before {
+    content:"";
+    background-image: url("assets/alhilal.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -15px;
+    width: 45px;
+    height: 45px;
+}
